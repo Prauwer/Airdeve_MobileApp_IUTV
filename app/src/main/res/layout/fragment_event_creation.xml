@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/fragment_event_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+
+        <include
+            layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/fragment_event_textview_welcome"
+            style="@style/titreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="left"
+            android:text="@string/create_welcome" />
+
+        <TextView
+            android:id="@+id/fragment_event_textview_tutoName"
+            style="@style/sousTitreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="@string/name_tuto" />
+
+        <EditText
+            android:id="@+id/fragment_event_edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/name_edit"
+            android:inputType="text|textCapSentences"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/fragment_event_textview_tutoCapacity"
+            style="@style/sousTitreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="@string/capacity_tuto" />
+
+        <EditText
+            android:id="@+id/fragment_event_edittext_capacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/capacity_edit"
+            android:inputType="number"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/fragment_event_textview_tutoDesc"
+            style="@style/sousTitreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="@string/desc_tuto" />
+
+        <EditText
+            android:id="@+id/fragment_event_edittext_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="top"
+            android:hint="@string/desc_edit"
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/fragment_event_textview_tutoMoneyNeeded"
+            style="@style/sousTitreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="@string/moneyneeded_tuto" />
+
+        <EditText
+            android:id="@+id/fragment_event_edittext_moneyNeeded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/moneyneeded_edit"
+            android:inputType="number"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/fragment_event_textview_tutoPlace"
+            style="@style/sousTitreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="@string/tuto_place" />
+
+        <EditText
+            android:id="@+id/fragment_event_edittext_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/place_edit"
+            android:inputType="text|textCapSentences"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/fragment_event_textview_tutoImg"
+            style="@style/sousTitreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="@string/url_tuto" />
+
+        <EditText
+            android:id="@+id/fragment_event_edittext_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/url_edit"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/fragment_event_textview_eventType"
+            style="@style/sousTitreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="@string/category_tuto" />
+
+        <RadioGroup
+            android:id="@+id/fragment_event_radio_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/fragment_event_radio_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/category_music" />
+
+            <RadioButton
+                android:id="@+id/fragment_event_radio_hobbies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/category_hobbies" />
+
+            <RadioButton
+                android:id="@+id/fragment_event_radio_art"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/category_art" />
+
+            <RadioButton
+                android:id="@+id/fragment_event_radio_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/category_sport" />
+
+            <RadioButton
+                android:id="@+id/fragment_event_radio_charity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/category_charity" />
+
+            <RadioButton
+                android:id="@+id/fragment_event_radio_shows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/category_shows" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/fragment_event_textview_tickets"
+            style="@style/sousTitreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="left"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/tickets_tuto" />
+        <TextView
+            android:id="@+id/fragment_event_textview_ticketsHint"
+            style="@style/DefaultTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/tickets_hint"
+            android:textColor="@color/common_google_signin_btn_text_light" />
+
+        <LinearLayout
+            android:id="@+id/fragment_event_ll_tickettypesButtons"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/fragment_event_button_less"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0.7"
+                android:text="@string/less">
+            </Button>
+            <Button
+                android:id="@+id/fragment_event_button_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="0.7"
+                android:text="@string/more">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_event_ll_ticket1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/tickets"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/fragment_event_textview_ticket1"
+                style="@style/sousTitreTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text="Ticket 1" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket1Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_name_edit"
+                android:inputType="text|textCapSentences"
+                android:maxLines="1"
+                android:padding="8dp"/>
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket1Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_price_edit"
+                android:inputType="number"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket1Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_amount_edit"
+                android:inputType="number"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket1Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="top"
+                android:hint="@string/ticket_desc_edit"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_event_ll_ticket2"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/tickets"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/fragment_event_textview_ticket2"
+                style="@style/sousTitreTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text="Ticket 2" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket2Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_name_edit"
+                android:inputType="text|textCapSentences"
+                android:maxLines="1"
+                android:padding="8dp"/>
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket2Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_price_edit"
+                android:inputType="number"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket2Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_amount_edit"
+                android:inputType="number"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket2Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="top"
+                android:hint="@string/ticket_desc_edit"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_event_ll_ticket3"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/tickets"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/fragment_event_textview_ticket3"
+                style="@style/sousTitreTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text="Ticket 3" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket3Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_name_edit"
+                android:inputType="text|textCapSentences"
+                android:maxLines="1"
+                android:padding="8dp"/>
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket3Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_price_edit"
+                android:inputType="number"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket3Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_amount_edit"
+                android:inputType="number"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket3Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="top"
+                android:hint="@string/ticket_desc_edit"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:padding="8dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fragment_event_ll_ticket4"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/tickets"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/fragment_event_textview_ticket4"
+                style="@style/sousTitreTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text="Ticket 4" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket4Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_name_edit"
+                android:inputType="text|textCapSentences"
+                android:maxLines="1"
+                android:padding="8dp"/>
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket4Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_price_edit"
+                android:inputType="number"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket4Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_amount_edit"
+                android:inputType="number"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket4Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="top"
+                android:hint="@string/ticket_desc_edit"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_event_ll_ticket5"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/tickets"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/fragment_event_textview_ticket5"
+                style="@style/sousTitreTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:text="Ticket 5" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket5Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_name_edit"
+                android:inputType="text|textCapSentences"
+                android:maxLines="1"
+                android:padding="8dp"/>
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket5Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_price_edit"
+                android:inputType="number"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket5Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="@string/ticket_amount_edit"
+                android:inputType="number"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/fragment_event_edittext_ticket5Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="top"
+                android:hint="@string/ticket_desc_edit"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment_event_textview_tutoSalesEnd"
+            style="@style/sousTitreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="left"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/salesEnd_tuto" />
+
+        <TextView
+            android:id="@+id/fragment_event_textview_tutoSalesEndHint"
+            style="@style/DefaultTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/salesEnd_hint"
+            android:textColor="@color/common_google_signin_btn_text_light" />
+
+        <DatePicker
+            android:id="@+id/fragment_event_datepicker_salesEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:gravity="center" />
+
+
+        <Button
+            android:id="@+id/fragment_event_button_next"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/custombutton"
+            android:text="@string/next"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/fragment_event_textview_filler"
+            style="@style/sousTitreTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="90sp"
+            android:gravity="bottom" />
+
+
+    </LinearLayout>
+
+</ScrollView>

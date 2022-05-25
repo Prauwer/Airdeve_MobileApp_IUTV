@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Airdeve</string>
+
+    <!-- Home fragment -->
+    <string name="trends">Les dernières tendances</string>
+    <string name="near">Près de chez vous</string>
+    <string name="event_name">Event name</string>
+    <string name="event_category">Event categorie</string>
+
+    <!-- Barre de navigation -->
+    <string name="bottom_actuality">Fil d\'actualités</string>
+    <string name="bottom_event">Créer un événement</string>
+    <string name="bottom_Account">Compte</string>
+
+    <!-- Event Fragment -->
+    <string name="supress_event">Supprimer l\'évenement</string>
+    <string name="modify_event">Modifier l\'évenement</string>
+    <string name="event_fragment_name">Exposition de peinture</string>
+    <string name="event_created_by">Créé par</string>
+    <string name="event_fragment_category">Exposition/musée</string>
+    <string name="share_count">23</string>
+    <string name="like_count">197</string>
+    <string name="event_place">Paris, île-de-France</string>
+    <string name="event_money_count">165€</string>
+    <string name="event_max_money_count">sur 200€</string>
+    <string name="event_creator_name">Julie Dumart</string>
+    <string name="event_buy_button">Acheter un ticket</string>
+    <string name="event_ticket_count">112</string>
+    <string name="event_ticket">tickets achetés</string>
+    <string name="event_remaining_days_count">14</string>
+    <string name="event_remaining_days">jours avant la fin du financement</string>
+    <string name="event_commentary">Commentaires</string>
+    <string name="event_dates">Du 14.11.2021 au 24.11.2021</string>
+
+    <!-- Account Fragment -->
+    <string name="conecter_google">Connectez-vous avec Google</string>
+    <string name="conecter_facebook">Connectez-vous avec Facebook</string>
+    <string name="inscription">Inscrivez-vous ici !</string>
+    <string name="conecter_mail">Se connecter avec une adresse mail</string>
+    <string name="organiser_phrase">Organiser des événements, même avec 0€.</string>
+    <string name="ou">ou</string>
+    <string name="mention_legal">En continuant à utiliser Airdeve, vous acceptez les conditions d\'utilisation et reconnaissez l\'avis de confidentialité de Airdeve</string>
+    <string name="follow">suivre</string>
+    <string name="nom_compte">Vit Kibit</string>
+    <string name="evenement">Ses événements</string>
+    <string name="avis">avis</string>
+    <string name="aceuille">À propos</string>
+    <string name="description">Cuius acerbitati uxor grave accesserat incentivum, germanitate Augusti turgida supra modum, quam Hannibaliano regi fratris filio antehac Constantinus iunxerat pater, Megaera quaedam mortalis, inflammatrix saevientis adsidua, humani cruoris avida nihil mitius quam maritus; qui paulatim eruditiores facti processu temporis .</string>
+    <string name="abonne_chifre">150</string>
+    <string name="abonne">abonnés</string>
+    <string name="abonnement_chifre">23</string>
+    <string name="abonnement">abonnements</string>
+    <string name="nom_facebook">Vit kibit</string>
+    <string name="nom_twiter">\@Vit_kib</string>
+    <string name="mdp">Mot De Passe</string>
+    <string name="pseudo">Pseudo</string>
+
+    <string name="vous_ette">Vous êtes?</string>
+    <string name="satisfait">satisfait</string>
+    <string name="sans_avis">sans avis</string>
+    <string name="in_satisfait">insatisfait</string>
+    <string name="racontez_nous_en_plus">Racontez-nous votre expérience</string>
+    <string name="l_evenement_etait">Écrivez votre avis ici. Racontez-nous en plus sur l\'évènement et son déroulement</string>
+    <string name="avis_organisateur">Donnez un titre à votre avis</string>
+    <string name="écrire_avis">Écrivez le titre de votre avis ici.</string>
+    <string name="nb_avis">Avis 60 • Mauvais </string>
+    <string name="moyenne_avis">Note moyenne : 1.4</string>
+    <string name="avisz">Les avis</string>
+
+    <string name="modifier">modifier</string>
+    <string name="my_events">Mes évènements</string>
+    <string name="my_notes">Mes avis</string>
+    <string name="my_account">Mon compte</string>
+
+    <!-- Event Create Fragment -->
+    <string name="create_welcome">Créons votre évenèment ensemble</string>
+    <string name="name_tuto">Choisissez un joli nom attrayant :</string>
+    <string name="name_edit">Nom d\'évenement</string>
+    <string name="capacity_tuto">Combien de participants sont attendus au maximum ?</string>
+    <string name="capacity_edit">Nombre de participants</string>
+    <string name="desc_tuto">Décrivez votre évenement pour attirer le plus de monde :</string>
+    <string name="desc_edit">Description</string>
+    <string name="moneyneeded_tuto">De combien d\'argent (€) avez vous besoin ?</string>
+    <string name="moneyneeded_edit">Plafond attendu</string>
+    <string name="url_tuto">Entrez l\'URL d\'une image de présentation :</string>
+    <string name="url_edit">Lien</string>
+    <string name="category_tuto">Quel est le type d\'évenement que vous souhaitez organiser ?</string>
+    <string name="category_music">Musique</string>
+    <string name="category_hobbies">Loisir</string>
+    <string name="category_art">Exposition et vernissage</string>
+    <string name="category_sport">Evènement sportif</string>
+    <string name="category_charity">Evènement associatif</string>
+    <string name="category_shows">Théâtre et spectacle</string>
+    <string name="tickets_tuto">Combien de tickets voulez vous créer ?</string>
+    <string name="tickets_hint">(Limités à 5)</string>
+    <string name="less">Moins</string>
+    <string name="more">Plus</string>
+    <string name="ticket_name_edit">Nom du ticket</string>
+    <string name="ticket_price_edit">Prix</string>
+    <string name="ticket_desc_edit">Description</string>
+    <string name="ticket_amount_edit">Nombre de tickets</string>
+    <string name="salesStart_tuto">Quand les ventes commencent elles ?</string>
+    <string name="salesEnd_hint">(Sous reserve d\'acceptation par un modérateur, 6 mois à partir d\'aujourd\'hui max.)</string>
+    <string name="salesEnd_tuto">Quand les ventes se terminent elles ?</string>
+    <string name="next">Suivant</string>
+    <string name="tuto_place">A quel endroit aura lieu votre évènement ?</string>
+    <string name="place_edit">Lieu</string>
+
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginStart="@dimen/default_margin_recycler"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="@dimen/default_margin_recycler"
+    android:layout_marginBottom="4dp"
+    android:orientation="horizontal"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <ImageView
+            android:id="@+id/recycler_event_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vert" />
+
+        <TextView
+            android:id="@+id/recycler_event_name"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="EVENT_NAME" />
+
+        <TextView
+            android:id="@+id/recycler_event_creator"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginLeft="270dp"
+            android:textStyle="bold"
+            android:text="CREATOR_TYPE"/>
+
+        <TextView
+            android:id="@+id/recycler_event_date"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="280dp"
+            android:text="EVENT_DATE"/>
+
+        <TextView
+            android:id="@+id/recycler_event_place"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="270dp"
+            android:text="EVENT_PLACE"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
